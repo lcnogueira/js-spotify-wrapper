@@ -7,10 +7,10 @@ import {
 } from '../src/main';
 
 global.fetch = require('node-fetch');
+
 chai.use(sinonChai);
 
 describe('Spotify Wrapper', () => {
-
   let stubedFetch;
   let promise;
 
@@ -46,7 +46,6 @@ describe('Spotify Wrapper', () => {
   });
 
   describe('Generic Search', () => {
-
     it('should call fetch function', () => {
       const artists = search();
       expect(stubedFetch).to.have.been.calledOnce;
