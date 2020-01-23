@@ -4,13 +4,13 @@ import sinonChai from 'sinon-chai';
 
 import {
   search, searchAlbums, searchArtists, searchTracks, searchPlaylists,
-} from '../src/main';
+} from '../src/search';
 
 global.fetch = require('node-fetch');
 
 chai.use(sinonChai);
 
-describe('Spotify Wrapper', () => {
+describe('Search', () => {
   let stubedFetch;
   let promise;
 
