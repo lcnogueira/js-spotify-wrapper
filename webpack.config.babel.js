@@ -1,7 +1,7 @@
 import path from 'path';
 
 export default () => ({
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd',
