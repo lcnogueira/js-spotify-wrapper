@@ -1,3 +1,9 @@
-const API_URL = 'https://api.spotify.com/v1';
+const TOKEN_API = 'YOUR_TOKEN_HERE';
 
-export default API_URL;
+export const API_URL = 'https://api.spotify.com/v1';
+
+export const HEADERS = {
+  headers: {
+    Authorization: `Bearer ${TOKEN_API}`,
+  },
+};
