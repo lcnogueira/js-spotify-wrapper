@@ -27,7 +27,7 @@ $ npm install js-spotify-wrapper-lib
 ### ES6
 
 ```js
-import SpotifyWrapper from 'spotify-wrapper';
+import SpotifyWrapper from 'js-spotify-wrapper-lib';
 
 const spotify = new SpotifyWrapper({
   token: 'YOUR_TOKEN_HERE'
